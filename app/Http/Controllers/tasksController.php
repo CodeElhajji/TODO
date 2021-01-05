@@ -11,7 +11,7 @@ class tasksController extends Controller
     public function index()
     {
        $value= taske::get();
-       return view('welcome')->with('data', $value);
+       return view('taske.welcome')->with('data', $value);
     }
     public function create()
     {
@@ -38,7 +38,7 @@ class tasksController extends Controller
             'task' => $req -> task,
             'timetask' => $req -> timetask,
         ]);
-        return redirect()->back()-> with(['done' =>'تمت الاظافة بنجاح']);
+        return redirect()->back()-> with(['done' =>__('messages.done')]);
     }
     //pest praqtess in php
     protected function getMessaged(){

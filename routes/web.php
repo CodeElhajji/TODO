@@ -12,10 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['prefix' => LaravelLocalization::setLocale() , 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function()
+{
 Route::group(['prefix' => 'taske'],function (){
     Route::get('/','tasksController@index');
     Route::get('create','tasksController@create');
     Route::post('store','tasksController@store') -> name('taske.store');
+});
 });
 //
 

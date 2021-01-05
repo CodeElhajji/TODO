@@ -13,10 +13,11 @@ return [
     |
     */
 
-    'task required' => 'Operation name is required',
-    'timetask required' => 'Operation date is required',
-    'task unique' => 'Name already exists',
-    'done' => 'Done'
 
+    'task' => 'المهمة',
+    'date task' => 'تاريخ المهمة',
+    'action' => 'خيارات',
+    'delete' => 'حدف',
+    'update' => 'تعديل'
 
 ];

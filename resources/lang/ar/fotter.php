@@ -13,10 +13,7 @@ return [
     |
     */
 
-    'task required' => 'Operation name is required',
-    'timetask required' => 'Operation date is required',
-    'task unique' => 'Name already exists',
-    'done' => 'Done'
 
+    'dev name' => 'عبدالجبار الحاجي'
 
 ];

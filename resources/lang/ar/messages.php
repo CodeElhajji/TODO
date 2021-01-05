@@ -16,5 +16,6 @@ return [
     'task required' => 'اسم العملية مطلوب',
     'timetask required' => 'تاريخ العملية مطلوب',
     'task unique' => 'الاسم موجود',
+    'done' => 'تمت الاضافة بنجاح'
 
 ];

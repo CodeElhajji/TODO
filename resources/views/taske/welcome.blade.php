@@ -6,9 +6,9 @@
         <thead class="">
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Task</th>
-            <th scope="col">Date</th>
-            <th scope="col">Action</th>
+            <th scope="col">{{__('listtodo.task')}}</th>
+            <th scope="col">{{__('listtodo.date task')}}</th>
+            <th scope="col">{{__('listtodo.action')}}</th>
         </tr>
         </thead>
         <tbody>
@@ -19,8 +19,8 @@
             <td>{{$_data -> task}}</td>
             <td>{{$_data -> timetask}}</td>
             <td>
-                    <a href="" class="btn btn-sm bg-success  text-white" type="button">Update</a>
-                    <a href="" class="btn btn-sm bg-danger  text-white" type="button">Delete</a>
+                    <a href="" class="btn btn-sm bg-success  text-white" type="button">{{__('listtodo.update')}}</a>
+                    <a href="" class="btn btn-sm bg-danger  text-white" type="button">{{__('listtodo.delete')}}</a>
             </td>
         </tr>
         @empty
