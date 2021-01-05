@@ -2,7 +2,8 @@
 @section('contect')
     <div class="container" >
         @if(count($data) > 0)
-    <table class="table table-dark ">
+    <div style="overflow-x:auto;">
+    <table class="table table-dark">
         <thead class="">
         <tr>
             <th scope="col">#</th>
@@ -24,9 +25,13 @@
             </td>
         </tr>
         @empty
-            <p>Table is empty</p>
+                <div class="alert alert-danger" role="alert">
+                    {{__('messages.empty table')}}
+                </div>
+
         @endforelse
         </tbody>
     </table>
+    </div>
     </div>
 @stop

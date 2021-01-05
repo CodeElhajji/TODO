@@ -1,6 +1,6 @@
 @extends('master')
 @section('contect')
-    <div class="container col-3 bg-white p-2" >
+    <div class="container  bg-white  p-2" >
             <h1 class="text-center">{{__('formlang.form title')}}</h1>
         {{--alert success--}}
         @if(Session::has('done'))
@@ -19,7 +19,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">{{__('formlang.form date')}}</label>
-                <input type="date" name="timetask" class="form-control" id="exampleInputPassword1" placeholder="">
+                <input type="datetime-local" name="timetask" class="form-control" id="exampleInputPassword1" >
                 @error('timetask')
                 <small class="text-danger">{{$message}}</small>
                 @enderror

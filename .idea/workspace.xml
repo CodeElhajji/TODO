@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9842a7-adf5-4e0b-a8b2-ccfccb2e2136" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/fotter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/listtodo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/fotter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/listtodo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TODO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TODO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/tasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/tasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/nav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/taske/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/taske/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/taske/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/taske/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/taske/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +173,8 @@
       <updated>1609779143249</updated>
       <workItem from="1609779145066" duration="2952000" />
       <workItem from="1609782133094" duration="7382000" />
-      <workItem from="1609802158735" duration="13234000" />
+      <workItem from="1609802158735" duration="16368000" />
+      <workItem from="1609887784957" duration="26000" />
     </task>
     <servers />
   </component>
