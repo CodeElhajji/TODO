@@ -43,9 +43,9 @@ class tasksController extends Controller
     //pest praqtess in php
     protected function getMessaged(){
         return $messages =[
-            'task.required' => 'اسم العملية مطلوب',
-            'timetask.required' => 'تاريخ العملية مطلوب',
-            'task.unique' => 'الاسم موجود',
+            'task.required' => __('messages.task required'),
+            'timetask.required' => __('messages.timetask required'),
+            'task.unique' => __('messages.task unique'),
         ];
     }
 }
