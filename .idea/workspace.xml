@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9842a7-adf5-4e0b-a8b2-ccfccb2e2136" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/taske/update.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/tasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/tasksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/taskes/taske.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/taskes/taske.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/formlang.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/formlang.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/formlang.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/formlang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/listtodo.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/listtodo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/taske/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/taske/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/taske/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/taske/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,17 +145,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang/en" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/taske" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\TODO\resources\views\taske" />
       <recent name="C:\wamp64\www\TODO\resources\lang\en" />
       <recent name="C:\wamp64\www\TODO\resources\lang\ar" />
       <recent name="C:\wamp64\www\TODO\resources\lang" />
       <recent name="C:\wamp64\www\TODO\resources\views\includes" />
-      <recent name="C:\wamp64\www\TODO\resources\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\TODO\resources\views\taske" />
@@ -174,11 +179,26 @@
       <workItem from="1609779145066" duration="2952000" />
       <workItem from="1609782133094" duration="7382000" />
       <workItem from="1609802158735" duration="16368000" />
-      <workItem from="1609887784957" duration="26000" />
+      <workItem from="1609887784957" duration="16311000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/tasksController.php</url>
+          <line>12</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\tasksController" />
+            <option name="methodName" value="index" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

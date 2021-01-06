@@ -18,7 +18,9 @@ Route::group(['prefix' => 'taske'],function (){
     Route::get('/','tasksController@index');
     Route::get('create','tasksController@create');
     Route::post('store','tasksController@store') -> name('taske.store');
+    Route::get('edit/{id}','tasksController@edit');
+    Route::post('taskupdate/{id}','tasksController@doUpdate');
 });
 });
-//
+
 

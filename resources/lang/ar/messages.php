@@ -13,8 +13,8 @@ return [
     |
     */
 
-    'task required' => 'اسم العملية مطلوب',
-    'timetask required' => 'تاريخ العملية مطلوب',
+    'task required' => 'اسم المهمة مطلوب',
+    'timetask required' => 'تاريخ المهمة مطلوب',
     'task unique' => 'الاسم موجود',
     'done' => 'تمت الاضافة بنجاح',
     'empty table' => 'لا توجد اي مهام المرجو اضافة بعض المهام لكي تظهر هنا'

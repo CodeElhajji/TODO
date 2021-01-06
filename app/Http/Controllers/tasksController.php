@@ -2,50 +2,48 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\taskRequest;
 use App\taskes\taske;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use LaravelLocalization;
 
 class tasksController extends Controller
 {
     public function index()
     {
-       $value= taske::get();
+       $value= taske::select('id', 'task_'.LaravelLocalization::getCurrentLocale().' as task','timetask','don')->get();
        return view('taske.welcome')->with('data', $value);
     }
+
     public function create()
     {
         return view('taske.create');
     }
-    public function store(Request $req)
+
+    public function store(taskRequest $req)
     {
-        //vaidation part
-
-        $ruels=[
-            'task' => 'required|unique:taskes,task', //validation exemple
-            'timetask' => 'required',
-        ]; //secend way to pass validation to validator
-
-        $msg= $this -> getMessaged(); //another way to pass validation to validator
-        $validator = Validator::make($req ->all(),$ruels ,$msg); //you can pasin validation here
-        if ($validator->fails()){
-            return redirect()->back()->withErrors($validator)->withInputs($req->all());
-        }
-
-        //request part
-
         taske::create([
-            'task' => $req -> task,
+            'task_ar' => $req -> task_ar,
+            'task_en' => $req -> task_en,
             'timetask' => $req -> timetask,
         ]);
         return redirect()->back()-> with(['done' =>__('messages.done')]);
     }
-    //pest praqtess in php
-    protected function getMessaged(){
-        return $messages =[
-            'task.required' => __('messages.task required'),
-            'timetask.required' => __('messages.timetask required'),
-            'task.unique' => __('messages.task unique'),
-        ];
+
+    public function edit($task_id){
+       $task = taske::find($task_id);
+        if (!$task) return redirect()->back();
+        return view('taske.update', compact('task'));
+
     }
+    public function doUpdate(taskRequest $request,$task_id){
+        $task = taske::find($task_id);
+        if (!$task)
+            return redirect()->back();
+        $task -> update($request -> all());
+        return redirect()->back()->with(['success' => ' تم التحديث بنجاح ']);
+    }
+
+
 }

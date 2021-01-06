@@ -18,6 +18,6 @@ return [
     'date task' => 'Date',
     'action' => 'Action',
     'delete' => 'Delete',
-    'update' => 'Update'
+    'update' => 'EDIT'
 
 ];

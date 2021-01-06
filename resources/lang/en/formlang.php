@@ -14,7 +14,9 @@ return [
     */
 
     'form title' => 'ADD YOUR TASK',
-    'task' => 'Task Name :',
+    'form title add' => 'UPDATE YOUR TASK',
+    'task ar' => 'Task Name (arabic) :',
+    'task en' => 'Task Name (english):',
     'form date' => 'Task Date :',
     'form save' => 'Save Task',
     'todo list' => 'TODO LIST',
