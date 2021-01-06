@@ -8,7 +8,7 @@
             {{Session::get('done')}}
         </div>
         @endif
-        <form method="post" action="{{route('taske.taskupdate'.$task->id)}}" >
+            <form method="post" action="{{route('taske.update',32)}}"  >
             @csrf
             <div class="form-group">
                 <label for="exampleInputEmail1">{{__('formlang.task en')}}</label>

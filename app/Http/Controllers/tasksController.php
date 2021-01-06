@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\taskRequest;
 use App\taskes\taske;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 use LaravelLocalization;
 
 class tasksController extends Controller
@@ -41,8 +39,13 @@ class tasksController extends Controller
         $task = taske::find($task_id);
         if (!$task)
             return redirect()->back();
-        $task -> update($request -> all());
-        return redirect()->back()->with(['success' => ' تم التحديث بنجاح ']);
+        //$task -> update($request -> all());
+        $task -> update([
+            'task_ar' =>$request -> task_ar,
+            'task_en' =>$request -> task_en,
+            'timetask' =>$request -> timetask,
+        ]);
+        return redirect()->back()->with(['done' => __('done update')]);
     }
 
 
