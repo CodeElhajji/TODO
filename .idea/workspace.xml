@@ -4,8 +4,6 @@
     <list default="true" id="4d9842a7-adf5-4e0b-a8b2-ccfccb2e2136" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/tasksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/tasksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/taske/gettodos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/taske/gettodos.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/taske/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/taske/update.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,20 +180,5 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/tasksController.php</url>
-          <line>10</line>
-          <properties>
-            <option name="className" value="\App\Http\Controllers\tasksController" />
-            <option name="methodName" value="index" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Http\Requests\taskRequest;
 use App\taskes\taske;
+use App\Traits\taskTrait;
 use LaravelLocalization;
 
 class tasksController extends Controller
 {
+    use taskTrait;
     public function index()
     {
        $value= taske::select('id', 'task_'.LaravelLocalization::getCurrentLocale().' as task','timetask', 'pic' , 'don')->get();
@@ -38,6 +39,7 @@ class tasksController extends Controller
         return view('taske.update', compact('task'));
 
     }
+
     public function doUpdate(taskRequest $request,$task_id){
         $task = taske::find($task_id);
         if (!$task)
@@ -52,13 +54,7 @@ class tasksController extends Controller
         return redirect()->back()->with(['done' => __('done update')]);
     }
 
-    protected function saveImage($photo , $folder ){
-        $file_extension = $photo -> getClientOriginalExtension();
-        $file_new_name = time().'.'.$file_extension;
-        $path = $folder;
-        $photo -> move($path,$file_new_name);
-        return $file_new_name;
-    }
+
 
 
 }
