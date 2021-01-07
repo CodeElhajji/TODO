@@ -20,9 +20,9 @@
             <th scope="row">{{$_data -> id}}</th>
             <td>{{$_data -> task}}</td>
             <td>{{$_data -> timetask}}</td>
-            <td><img src="{{$_data -> pic}}" width="60"> </td>
+            <td><img src="{{asset('images/taskes/'.$_data -> pic)}}" width="60"> </td>
             <td>
-                    <a href="{{url('taske/edit/'.$_data -> id)}}" class="btn btn-sm bg-success  text-white" type="button">{{__('listtodo.update')}}</a>
+                    <a href=" {{url('taske/edit/'.$_data -> id)}}" class="btn btn-sm bg-success  text-white" type="button">{{__('listtodo.update')}}</a>
                     <a href="" class="btn btn-sm bg-danger  text-white" type="button">{{__('listtodo.delete')}}</a>
             </td>
         </tr>

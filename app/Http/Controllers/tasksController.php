@@ -21,7 +21,10 @@ class tasksController extends Controller
 
     public function store(taskRequest $req)
     {
+        //save photo in folder
+        $img_name = $this -> saveImage($req -> pic , 'images/taskes');
         taske::create([
+            'pic' => $img_name,
             'task_ar' => $req -> task_ar,
             'task_en' => $req -> task_en,
             'timetask' => $req -> timetask,
@@ -39,13 +42,22 @@ class tasksController extends Controller
         $task = taske::find($task_id);
         if (!$task)
             return redirect()->back();
-        //$task -> update($request -> all());
+        $img_name = $this -> saveImage($request -> pic , 'images/taskes');
         $task -> update([
+            'pic'=> $img_name,
             'task_ar' =>$request -> task_ar,
             'task_en' =>$request -> task_en,
             'timetask' =>$request -> timetask,
         ]);
         return redirect()->back()->with(['done' => __('done update')]);
+    }
+
+    protected function saveImage($photo , $folder ){
+        $file_extension = $photo -> getClientOriginalExtension();
+        $file_new_name = time().'.'.$file_extension;
+        $path = $folder;
+        $photo -> move($path,$file_new_name);
+        return $file_new_name;
     }
 
 

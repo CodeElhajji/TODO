@@ -8,7 +8,7 @@
             {{Session::get('done')}}
         </div>
         @endif
-            <form method="post" action="{{route('taske.update',32)}}"  >
+            <form method="post" action="{{route('taske.update',$task -> id)}}"  enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="exampleInputEmail1">{{__('formlang.task en')}}</label>
@@ -31,6 +31,14 @@
                 <small class="text-danger">{{$message}}</small>
                 @enderror
             </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">{{__('listtodo.photo')}}</label>
+                    <input type="file" value="{{$task -> pic}}" name="pic" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                    @error('pic')
+                    <small class="text-danger">{{$message}}</small>
+                    @enderror
+                </div>
+
             <button type="submit" class="btn btn-danger">{{__('formlang.add todo')}}</button>
         </form>
     </div>
