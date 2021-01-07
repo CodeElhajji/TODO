@@ -18,6 +18,7 @@ return [
     'date task' => 'تاريخ المهمة',
     'action' => 'خيارات',
     'delete' => 'حدف',
-    'update' => 'تعديل'
+    'update' => 'تعديل',
+    'photo'=>'الصورة'
 
 ];

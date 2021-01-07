@@ -18,6 +18,7 @@ return [
     'date task' => 'Date',
     'action' => 'Action',
     'delete' => 'Delete',
-    'update' => 'EDIT'
+    'update' => 'EDIT',
+    'photo'=>'picture'
 
 ];

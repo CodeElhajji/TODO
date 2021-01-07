@@ -8,7 +8,7 @@
             {{Session::get('done')}}
         </div>
         @endif
-        <form method="post" action="{{route('taske.store')}}" >
+        <form method="post" action="{{route('taske.store')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="exampleInputEmail1">{{__('formlang.task en')}}</label>
@@ -28,6 +28,13 @@
                 <label for="exampleInputPassword1">{{__('formlang.form date')}}</label>
                 <input type="datetime-local" name="timetask" class="form-control" id="exampleInputPassword1" >
                 @error('timetask')
+                <small class="text-danger">{{$message}}</small>
+                @enderror
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">{{__('listtodo.photo')}}</label>
+                <input type="file" name="pic" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                @error('pic')
                 <small class="text-danger">{{$message}}</small>
                 @enderror
             </div>

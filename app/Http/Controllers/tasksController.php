@@ -10,8 +10,8 @@ class tasksController extends Controller
 {
     public function index()
     {
-       $value= taske::select('id', 'task_'.LaravelLocalization::getCurrentLocale().' as task','timetask','don')->get();
-       return view('taske.welcome')->with('data', $value);
+       $value= taske::select('id', 'task_'.LaravelLocalization::getCurrentLocale().' as task','timetask', 'pic' , 'don')->get();
+       return view('taske.gettodos')->with('data', $value);
     }
 
     public function create()

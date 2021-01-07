@@ -27,6 +27,7 @@ class taskRequest extends FormRequest
             'task_ar' => 'required',
             'task_en' => 'required',
             'timetask' => 'required',
+            'pic'=>'required'
         ];
     }
     public function messages(){
@@ -34,6 +35,7 @@ class taskRequest extends FormRequest
             'task_ar.required' => __('messages.task required'),
             'task_en.required' => __('messages.task required'),
             'timetask.required' => __('messages.timetask required'),
+            'pic.required' => __('messages.pic required'),
             'task_ar.unique' => __('messages.task unique'),
             'task_en.unique' => __('messages.task unique'),
             ];

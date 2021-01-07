@@ -22,6 +22,9 @@ Route::group(['prefix' => 'taske'],function (){
     Route::post('update/{task_id}','tasksController@doUpdate') ->name('taske.update');
     Route::get('delete/{task_id}', 'CrudController@delete')->name('task.delete');
 });
+Route::get('/' ,function(){
+    return view('home');
+});
 });
 
 

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-info">
-        <p class="">{{__('fotter.dev name')}}</p>
+<nav class="navbar navbar-light ">
+        <p class="mx-auto">{{__('fotter.dev name')}}</p>
 </nav>
 

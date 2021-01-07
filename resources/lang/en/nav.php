@@ -15,7 +15,8 @@ return [
 
     'todo list' => 'TODO LIST',
     'add todo' => 'ADD TODO',
-    'lang' => 'Langue'
+    'lang' => 'Langue',
+    'home' => 'HOME'
 
 
 ];

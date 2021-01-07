@@ -17,6 +17,7 @@ return [
     'timetask required' => 'Operation date is required',
     'task unique' => 'Name already exists',
     'done update' => 'updated ',
+    'pic required' => "Pic date is required",
     'empty table' => 'There are no tasks. Please add some tasks '
 
 
