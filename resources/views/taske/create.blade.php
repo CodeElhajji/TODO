@@ -3,11 +3,6 @@
     <div class="container  bg-white  p-2" >
             <h1 class="text-center">{{__('formlang.form title')}}</h1>
         {{--alert success--}}
-        @if(Session::has('done'))
-        <div class="alert alert-success" role="alert">
-            {{Session::get('done')}}
-        </div>
-        @endif
         <form method="post" action="{{route('taske.store')}}" enctype="multipart/form-data">
             @csrf
             <div class="form-group">

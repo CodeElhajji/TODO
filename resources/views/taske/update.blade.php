@@ -3,11 +3,6 @@
     <div class="container  bg-white  p-2" >
             <h1 class="text-center">{{__('formlang.form title add')}}</h1>
         {{--alert success--}}
-        @if(Session::has('done'))
-        <div class="alert alert-success" role="alert">
-            {{Session::get('done')}}
-        </div>
-        @endif
             <form method="post" action="{{route('taske.update',$task -> id)}}"  enctype="multipart/form-data">
             @csrf
             <div class="form-group">

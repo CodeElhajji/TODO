@@ -5,6 +5,7 @@ use App\Http\Requests\taskRequest;
 use App\taskes\taske;
 use App\Traits\taskTrait;
 use LaravelLocalization;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class tasksController extends Controller
 {
@@ -30,7 +31,8 @@ class tasksController extends Controller
             'task_en' => $req -> task_en,
             'timetask' => $req -> timetask,
         ]);
-        return redirect()->back()-> with(['done' =>__('messages.done')]);
+        Alert::success('', __('messages.done'));
+        return redirect()->back();
     }
 
     public function edit($task_id){
@@ -41,6 +43,7 @@ class tasksController extends Controller
     }
 
     public function doUpdate(taskRequest $request,$task_id){
+
         $task = taske::find($task_id);
         if (!$task)
             return redirect()->back();
@@ -51,14 +54,19 @@ class tasksController extends Controller
             'task_en' =>$request -> task_en,
             'timetask' =>$request -> timetask,
         ]);
+        Alert::success('', __('messages.done update'));
         return redirect()->back()->with(['done' => __('messages.done update')]);
     }
 
     public function deletetTaske($task_id){
         $deleted_task = taske::find($task_id);
-        if (!$deleted_task) return back() ->with(['notdeleted'=>__('messages.notdeleted')]);
+        if (!$deleted_task) {
+            Alert::error('', 'messages.notdeleted');
+            return back();
+        }
         $deleted_task -> delete();
-        return  redirect()->route('taskes.all')->with(['deleted'=> __('messages.deleted') ]);
+        Alert::success('', __('messages.deleted'));
+        return  redirect()->route('taskes.all');
     }
 
 
