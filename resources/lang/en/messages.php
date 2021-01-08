@@ -16,9 +16,12 @@ return [
     'task required' => 'Operation name is required',
     'timetask required' => 'Operation date is required',
     'task unique' => 'Name already exists',
+    'done' => 'Task Created ',
     'done update' => 'updated ',
     'pic required' => "Pic date is required",
-    'empty table' => 'There are no tasks. Please add some tasks '
+    'empty table' => 'There are no tasks. Please add some tasks ',
+    'notdeleted' => 'not deleted',
+    'deleted' => 'deleted '
 
 
 

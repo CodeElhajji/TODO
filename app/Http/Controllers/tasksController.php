@@ -51,7 +51,14 @@ class tasksController extends Controller
             'task_en' =>$request -> task_en,
             'timetask' =>$request -> timetask,
         ]);
-        return redirect()->back()->with(['done' => __('done update')]);
+        return redirect()->back()->with(['done' => __('messages.done update')]);
+    }
+
+    public function deletetTaske($task_id){
+        $deleted_task = taske::find($task_id);
+        if (!$deleted_task) return back() ->with(['notdeleted'=>__('messages.notdeleted')]);
+        $deleted_task -> delete();
+        return  redirect()->route('taskes.all')->with(['deleted'=> __('messages.deleted') ]);
     }
 
 

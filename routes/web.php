@@ -15,16 +15,14 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => LaravelLocalization::setLocale() , 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function()
 {
 Route::group(['prefix' => 'taske'],function (){
-    Route::get('/','tasksController@index');
+    Route::get('/','tasksController@index')->name('taskes.all');
     Route::get('create','tasksController@create');
     Route::post('store','tasksController@store') -> name('taske.store');
     Route::get('edit/{task_id}','tasksController@edit');
     Route::post('update/{task_id}','tasksController@doUpdate') ->name('taske.update');
-    Route::get('delete/{task_id}', 'CrudController@delete')->name('task.delete');
+    Route::get('delete/{task_id}', 'tasksController@deletetTaske')->name('task.delete');
 });
-Route::get('/' ,function(){
-    return view('home');
-});
+Route::get('/' ,function() { return view('home');});
 });
 
 
